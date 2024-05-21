@@ -22,8 +22,10 @@
         "baseUrl": "./",
         "paths": {
             "@/*": ["./src/*"]
-        }
+        },
+        "typeRoots": ["./node_modules/@altv"]
     },
     "include": ["src"],
+    "exclude": ["node_modules"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,6 +1,7 @@
 import { FC, memo, useState } from 'react';
 import { Button, Text, TextField, VStack } from '@tr271v0r/ui-tool-kit';
 import { Form } from '@/shared/ui/Form/ui/Form';
+import { checkAlt } from '../model/services/testLogin';
 
 export const LoginForm: FC = memo(() => {
     const [login, setLogin] = useState('');
@@ -24,7 +25,7 @@ export const LoginForm: FC = memo(() => {
                     masked
                 />
             </VStack>
-            <Button fullWidth>
+            <Button fullWidth onClick={() => checkAlt()}>
                 <Text size="l">Play</Text>
             </Button>
         </Form>

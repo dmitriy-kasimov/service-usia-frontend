@@ -21,6 +21,10 @@
         "react-router-dom": "^6.23.1"
     },
     "devDependencies": {
+        "@altv/types-client": "^16.2.2",
+        "@altv/types-natives": "^16.2.0",
+        "@altv/types-shared": "^16.2.1",
+        "@altv/types-webview": "^16.2.1",
         "@tr271v0r/ui-tool-kit": "^2.1.3",
         "@types/react": "^18.2.66",
         "@types/react-dom": "^18.2.22",
