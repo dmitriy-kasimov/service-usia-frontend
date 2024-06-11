@@ -6,5 +6,5 @@ interface AppCard {
 }
 
 export const AppCard: React.FC<AppCard> = memo((props) => {
-    return <Card padding="m">{props.children}</Card>;
+    return <Card contentMargin={'m'}>{props.children}</Card>;
 });

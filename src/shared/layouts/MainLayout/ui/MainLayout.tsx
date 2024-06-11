@@ -29,7 +29,11 @@ export const MainLayout: FC<MainLayoutProps> = memo((props) => {
                 content={content}
                 closable={false}
                 // portalElement={document.getElementById('MainLayout')!}
-                fullscreen
+                // fullscreen
+                minContentWidth="600px"
+                maxContentWidth="600px"
+                minContentHeight="800px"
+                maxContentHeight="800px"
                 lazy
             />
         </div>
