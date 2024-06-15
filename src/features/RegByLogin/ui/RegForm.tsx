@@ -7,6 +7,7 @@ import {
     VStack,
 } from '@tr271v0r/ui-tool-kit';
 import { FC, memo, useState } from 'react';
+import { onRegByLogin } from '../model/services/onRegByLogin.ts';
 
 export const RegForm: FC = memo(() => {
     const [login, setLogin] = useState('');
@@ -15,6 +16,10 @@ export const RegForm: FC = memo(() => {
     const [confirmPassword, setConfirmPassword] = useState('');
 
     const [checkRules, setCheckRules] = useState(false);
+
+    const onRegClick = () => {
+        onRegByLogin(login, password, confirmPassword, checkRules);
+    };
 
     return (
         <Form>
@@ -49,7 +54,7 @@ export const RegForm: FC = memo(() => {
                     <Text>Agree with the rules</Text>
                 </Checkbox>
             </VStack>
-            <Button fullWidth>
+            <Button fullWidth onClick={onRegClick}>
                 <Text size="l">Continue</Text>
             </Button>
         </Form>

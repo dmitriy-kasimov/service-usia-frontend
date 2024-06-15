@@ -1,11 +1,18 @@
 import { Rules } from '@/features/Rules';
-import { AppCard } from '@/shared/ui/AppCard/ui/AppCard';
+
 import { memo } from 'react';
+import { Card } from '@tr271v0r/ui-tool-kit';
 
 export const CardRules: React.FC = memo(() => {
     return (
-        <AppCard>
+        <Card
+            contentMargin={'m'}
+            style={{
+                marginTop: 'auto',
+                marginBottom: 'auto',
+            }}
+        >
             <Rules />
-        </AppCard>
+        </Card>
     );
 });
