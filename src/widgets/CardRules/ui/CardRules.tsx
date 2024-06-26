@@ -6,10 +6,11 @@ import { Card } from '@tr271v0r/ui-tool-kit';
 export const CardRules: React.FC = memo(() => {
     return (
         <Card
-            contentMargin={'m'}
+            contentMargin={'s'}
             style={{
                 marginTop: 'auto',
                 marginBottom: 'auto',
+                backdropFilter: 'blur(5px)',
             }}
         >
             <Rules />

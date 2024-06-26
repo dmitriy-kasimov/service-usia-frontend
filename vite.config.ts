@@ -21,8 +21,5 @@ export default defineConfig({
         emptyOutDir: true,
         minify: 'esbuild',
         reportCompressedSize: false,
-        // rollupOptions: {
-        //     external: ['alt-client', 'natives'],
-        // },
     },
 });

@@ -18,18 +18,13 @@ export const MainLayout: FC<MainLayoutProps> = memo((props) => {
     };
 
     return (
-        <div
-            id="MainLayout"
-            className={classNames(cls.MainLayout, {}, [className])}
-        >
+        <div className={classNames(cls.MainLayout, {}, [className])}>
             <Window
                 isOpen={window}
                 onClose={closeWindow}
                 sidebar={sidebar}
                 content={content}
                 closable={false}
-                // portalElement={document.getElementById('MainLayout')!}
-                // fullscreen
                 minContentWidth="600px"
                 maxContentWidth="600px"
                 minContentHeight="800px"
